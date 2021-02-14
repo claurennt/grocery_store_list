@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 
 //start list of ingredients
-let ingredients = ["olio", "sale", "pepe"];
+let ingredients = ["olive oil", "pasta", "chili powder"];
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -29,7 +29,7 @@ app.get("/", function(req, res) {
   };
 
   //date of today as string with local format
-  let today = dateOfToday.toLocaleDateString("it-IT", options);
+  let today = dateOfToday.toLocaleDateString("en-GB", options);
 
   //renders .ejs file and the the respective key value paths
   res.render("list", {
