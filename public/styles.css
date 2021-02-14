@@ -1,0 +1,29 @@
+body{
+background-image: url("https://image.freepik.com/free-photo/wide-angle-gleaming-red-yellow-tomatoes-white-background-high-quality-photo_114579-35389.jpg");
+-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+text-align: center;
+}
+
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.7rem;
+}
+div{
+  width: 500px;
+  	padding-top: 3%;
+    padding-left: 20%;
+  	margin: auto;
+    text-align: left;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1rem;
+    list-style-type: none;
+
+  }
+
+  button{
+    background-color: orange;
+  
+  }

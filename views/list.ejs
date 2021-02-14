@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Food Ingredients List</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+<div>
+  <!-- Prints current day -->
+  <h1> <%= dayOfTheWeek %> </h1>
+
+
+    <p><strong>Lista ingredienti per la cena</strong></p>
+
+
+
+    <ul>
+      <!-- for loop to render the i'th position of the array as a list item-->
+      <% for (let i = 0; i < newIngredientsAdded.length; i++) { %>
+      <li> <%= newIngredientsAdded[i] %> </li>
+      <%  } %>
+    </ul>
+
+    <form action="/" method="post">
+      <input type="text" name="newIngredient" value="">
+      <button type="submit" name="submit">Add Ingredient</button>
+
+
+    </form>
+  </div>
+</body>
+
+</html>
