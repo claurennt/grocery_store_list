@@ -25,5 +25,10 @@ div{
 
   button{
     background-color: orange;
-  
   }
+
+p{
+  text-align: center;
+  text-decoration: overline;
+  font-family: sans-serif;
+}
