@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 
 //start list of ingredients
-let ingredients = ["olive oil", "pasta", "chili powder"];
+let ingredients = ["lots of love for cooking"];
 
 app.use(bodyParser.urlencoded({
   extended: true
